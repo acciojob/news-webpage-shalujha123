@@ -1,1 +1,27 @@
 /*  your css code here. If applicable */
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px 500px 100px;
+	grid-template-areas: 
+	"h h h"
+	"s m n";
+	.header{
+		grid-area: h;
+	}
+	.latest-news-section{
+		grid-area: s;
+	}
+	.main{
+		grid-area: m;
+	}
+	.pictorial-news-section{
+		grid-area: n
+	}
+	.item{
+	border: 1px solid;
+	}
+}
+img{
+	width: 150px;
+}
